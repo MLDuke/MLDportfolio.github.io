@@ -1,0 +1,137 @@
+
+@media screen and (min-width: 1440px){
+
+    .content{
+        margin: 0 auto;
+        max-width: 1440px;
+
+    }
+    
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font_body);
+    font-size: var(--font_size--normal);
+    line-height: var(--font_height--normal);
+    color: var(--color_text--default);
+    background: var(--background-color);
+    accent-color: var(--color_accent);
+ }
+
+main{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    min-height: 100dvh;
+     
+}
+
+
+/* Type Styles */
+  
+  /* Heading typography */
+  
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font_head);
+    font-weight: var(--font_weight--medium);
+  }
+  
+  h1,
+  .util_txt--h1 {
+    font-size: var(--font_size--xxlarge);
+    line-height: var(--font_height--xxlarge);
+  }
+  
+  h2,
+  .util_txt--h2 {
+    font-size: var(--font_size--xlarge);
+    line-height: var(--font_height--xlarge);
+  }
+  
+  h3,
+  .util_txt--h3 {
+    font-size: var(--font_size--large);
+    line-height: var(--font_height--medium);
+  }
+  
+  h4,
+  .util_txt--h4 {
+    font-size: var(--font_size--medium);
+    line-height: var(--font_height--mediun);
+  }
+
+  /* Body Type */
+  p{
+    word-wrap: break-word;
+    max-width: 800px;
+  }
+  
+  /* Links */
+  a:not([class]) {
+    color: var(--color_text--link);
+    text-decoration: none;
+    font-weight: var(--font_size--medium);
+  }
+  
+  a:not([class]):visited {
+    text-decoration-color: var(--color_text--link-alt);
+  }
+  
+  
+  a:not([class]):hover,
+  a:not([class]):focus {
+    text-decoration: underline;
+    text-decoration-color: var(--color_text--link-alt);
+    text-decoration-thickness: 2px;
+  }
+  
+  /* OPTIONAL STYLES - Add an icon for special links */
+  
+  /* a:not([class])[target="_blank"]::after,
+  a:not([class])[data-link-type="external"] {
+    content: '';
+    padding-inline-start: 0.1em;
+  } */
+  
+  /* a:not([class])[href$='.pdf']::after,
+  a:not([class])[data-link-type='document']::after {
+    content: '';
+    padding-inline-start: 0.1em;
+  } */
+  
+  /* a:not([class])[href^="tel:"]::before,
+  a:not([class])[data-link-type="telephone"]::before {
+    content: '';
+    padding-inline-end: 0.1em;
+  } */
+  
+  /* a:not([class])[href^="mailto:"]::before,
+  a:not([class])[data-link-type="email"]::before {
+    content: '';
+    padding-inline-end: 0.1em;
+  } */
+
+
+
+  /* Image Styles */
+
+  .landscape{
+    
+    max-width: 100%;
+  }
+
+
+  /* Classes */
+
+  .project-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-item:hover{
+    cursor: pointer;
+  }

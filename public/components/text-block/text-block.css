@@ -1,0 +1,25 @@
+@import url("../../styles/reset.css");
+@import url("../../styles/global.css");
+@import url("../../styles/variables.css");
+
+.text-block:hover > div{
+    color: blue;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+
+}
+.text-block{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#link:empty{
+    display: none;
+}

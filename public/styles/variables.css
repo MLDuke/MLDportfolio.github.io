@@ -1,0 +1,46 @@
+:root {
+
+    --background-color: #E8EBF3;
+
+    --text-color: black;
+    --text-color-mute: hsl(0, 0%, 40%);
+
+    --link-color: darkblue;
+
+    --m-space: 1rem;
+
+    /* Font Families */
+    --font_body: serif;
+    --font_head: serif;
+    --font_mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+
+    /* Font Weights */
+    --font_weight--thin: 100;
+    --font_weight--extralight: 200;
+    --font_weight--light: 300;
+    --font_weight--normal: 400;
+    --font_weight--medium: 500;
+    --font_weight--semibold: 600;
+    --font_weight--bold: 700;
+    --font_weight--extrabold: 800;
+    --font_weight--black: 900;
+
+    /* Font Sizes & Line Heights */
+    /* Based on a modular scale 1.125 by 1.2 */
+    /* Exact values have been refined to be a whole pixel value */
+    --font_size--small: 0.9375rem;    /* 15px */
+    --font_size--normal: 1.125rem;    /* 18px */
+    --font_size--medium: 1.375rem;    /* 22px */
+    --font_size--large: 1.625rem;     /* 26px */
+    --font_size--xlarge: 1.9375rem;   /* 31px */
+    --font_size--xxlarge: 2.3125rem;  /* 37px */
+    --font_size--xxxlarge: 2.8125rem; /* 45px */
+
+    /* Line heights */
+    --font_height--small: 1.2;
+    --font_height--normal: 1.65;
+    --font_height--medium: 1.25;
+    --font_height--large: 0.75;
+    --font_height--xlarge: 0.75;
+    --font_height--xxlarge: 0.75;
+}

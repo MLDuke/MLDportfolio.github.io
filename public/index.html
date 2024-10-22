@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="index.css">
+    <script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
+
+    <title>Test Homepage</title>
+</head>
+<body hx-boost="true">
+    <header>
+        <nav>
+            <h1>Home Page</h1>
+        
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto magni dicta fugiat ipsam explicabo magnam assumenda accusantium voluptatibus ex aliquam quae doloribus suscipit sint repellendus veritatis error, blanditiis dignissimos voluptatem?</h3>
+            <!-- <a href="pages/page1.html">View Page</a> -->
+        </section>
+        <div id = "page-content">
+        </div>
+        
+            <div class="project-item" hx-get="/public/projects/page1.html" hx-trigger = "click" hx-swap = "abovebegin" hx-target ="#page-content" >
+                <figure class="landscape">
+                    <image src ="https://placehold.co/960x540"></image>
+                </figure>    
+                <x-text-block
+                    title = "Project Name"
+                    year = "2024"
+                    type = "Personal"
+                    body = "Lorem ipsum dolor sit amet consectetur. Commodo tortor sit ipsum in tristique cras. Massa phasellus felis vestibulum ultricies metus neque enim euismod eget. In est nibh turpis et turpis enim at vestibulum elementum. Vel at nisl in diam amet tincidunt bibendum egestas tellus."
+                    tags = "Branding"
+                ></x-text-block>
+            </div>
+            <div class="project-item">
+                <figure class="landscape">
+                    <image src ="https://placehold.co/960x540"></image>
+                </figure>    
+                <x-text-block
+                    title = "Project Name"
+                    year = "2024"
+                    type = "Personal"
+                    body = "Lorem ipsum dolor sit amet consectetur. Commodo tortor sit ipsum in tristique cras. Massa phasellus felis vestibulum ultricies metus neque enim euismod eget. In est nibh turpis et turpis enim at vestibulum elementum. Vel at nisl in diam amet tincidunt bibendum egestas tellus."
+                    tags = "Branding"
+                ></x-text-block>
+            </div>
+        <ul>
+            <li><a href="/projects/page1.html" hx-swap="abovebegin" hx-target ="#page-content" >Page 1></a></li>
+            <li><a href="/projects/page2.html">Page 2></a></li>
+            <li><a href="/projects/page3.html">Page 3></a></li>
+        </ul>
+    </main>
+
+<script type = "module" src= "index.js"></script>
+</body>
+</html>
